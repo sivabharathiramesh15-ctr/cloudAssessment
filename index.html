@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Movie: Interstellar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #222;
+      color: #eee;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .movie-container {
+      max-width: 800px;
+      background-color: #333;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.8);
+    }
+    h1 {
+      color: #f9a825;
+      margin-top: 0;
+    }
+    .poster {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .description {
+      font-size: 1.1em;
+      line-height: 1.5;
+    }
+    iframe {
+      display: block;
+      margin: 20px auto 0;
+      border-radius: 10px;
+      max-width: 100%;
+      height: 400px;
+    }
+    .info {
+      margin-top: 10px;
+      font-style: italic;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="movie-container">
+    <h1>Interstellar (2014)</h1>
+    <img 
+      src="https://m.media-amazon.com/images/I/91kFYg4fX3L._AC_SL1500_.jpg" 
+      alt="Interstellar Movie Poster" 
+      class="poster"
+    />
+    <p class="description">
+      A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival. Directed by Christopher Nolan, this epic sci-fi drama explores love, sacrifice, and the nature of time.
+    </p>
+    <p class="info">
+      Director: Christopher Nolan <br />
+      Genre: Sci-Fi, Adventure, Drama <br />
+      Rating: PG-13
+    </p>
+
+    <iframe 
+      src="https://www.youtube.com/embed/zSWdZVtXT7E" 
+      title="Interstellar Trailer" 
+      allowfullscreen
+    ></iframe>
+  </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Car Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 2.4rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #cce7ff;
+    }
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #007acc;
+    }
+    .car-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .car-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 280px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .car-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    .car-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 3px solid #007acc;
+    }
+    .car-info {
+      padding: 15px;
+    }
+    .car-info h3 {
+      margin-bottom: 10px;
+      color: #005f99;
+      font-size: 1.4rem;
+    }
+    .car-info p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.4;
+    }
+    footer {
+      background-color: #007acc;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 50px;
+      font-size: 0.9rem;
+    }
+    @media(max-width: 600px) {
+      .car-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Car Showcase
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Models</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Our Featured Cars</h2>
+    <div class="car-list">
+      <div class="car-card">
+        <img class="car-image" src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=400&q=80" alt="Sedan" />
+        <div class="car-info">
+          <h3>Urban Sedan</h3>
+          <p>A stylish and fuel-efficient sedan perfect for city driving and daily commutes.</p>
+        </div>
+      </div>
+      <div class="car-card">
+        <img class="car-image" src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=400&q=80" alt="Sports Car" />
+        <div class="car-info">
+          <h3>Sportster GT</h3>
+          <p>A high-performance sports car delivering speed, agility, and head-turning looks.</p>
+        </div>
+      </div>
+      <div class="car-card">
+        <img class="car-image" src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="SUV" />
+        <div class="car-info">
+          <h3>Adventure SUV</h3>
+          <p>Rugged and spacious, built to handle off-road terrain and family trips with ease.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Car Showcase. All rights reserved.
+  </footer>
+
+</body>
+</html>
